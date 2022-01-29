@@ -1,0 +1,600 @@
+*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+	@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Lobster&family=Mochiy+Pop+P+One&family=Open+Sans:ital,wght@0,400;1,300&family=Roboto:ital,wght@1,100&family=Supermercado+One&display=swap');
+		.header{
+			width: 100%;
+			height: 100vh;
+			background-image:linear-gradient(rgba(0,168,255,0.3), rgba(0,168,255,0.3)) ,url('images/h1.jpg');
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			clip-path: polygon(100% 0%,100% 77%,50% 100%,0 75%,0 0);
+			position: relative;
+		}
+		.header:before{
+			content: "";
+			position: absolute;
+			top: 0%;
+			bottom: 0%;
+			left: 0%;
+			right: 0%;
+			opacity: 0.4;
+			z-index: -1;
+			background: linear-gradient(to right, #1e5799 0%,#3ccdbb 0%, #16c9f6 100%);
+		}
+	/*	.navbar:before{
+			content: "";
+			position: absolute;
+			top: 0%;
+			bottom: 0%;
+			left: 0%;
+			right: 0%;
+			opacity: 0.4;
+			z-index: -1;
+			background: linear-gradient(to right, #1e5799 0%,#3ccdbb 0%, #16c9f6 100%);
+		}*/
+		.nav-item  a{
+			text-decoration: none;
+			color: white;
+			font-weight: bold;
+			z-index: 1;
+		}
+
+		.cend{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.cend h1{
+			color: white;
+			font-size: 60px;
+			font-family: 'Supermercado One', cursive;
+			text-shadow: 2px 2px whitesmoke;
+		}
+		.cend p{
+			color: white;
+			font-size: 35px;
+			font-family: 'Supermercado One', cursive;
+			text-shadow: 1px 1px whitesmoke;
+			text-align: center;
+		}
+		.header-section{
+			height: 50vh;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.pra{
+			height: 250px;
+			width: 300px;
+			  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
+  margin-left: 50%;
+  border-radius: 25%;
+		}
+		.wrapper{
+			display: grid;
+			grid-gap: 20px;
+		}
+  
+  .top-container {
+  	display: grid;
+  	width: 100%;
+  	height: auto;
+  	grid-gap: 20px;
+  	grid-template-areas: 
+  	'showcase top-box top-box-a'
+  	'showcase top-box top-box-b'
+  }
+ 
+ 
+ 
+ .showcase{
+ 	width: 100%;
+ 	height: auto;
+ 	margin-left: 20px;
+ 	display: flex;
+ 	align-items: center;
+ 	flex-direction: column;
+ 	justify-content: start;
+ }
+
+ .boxes{
+ 	display: grid;
+ 	grid-template-columns: repeat(auto-fit, 20rem);
+ 	justify-content: center;
+ 	grid-gap: 20px;
+ }
+ .showcase{
+  
+  background-image: linear-gradient(to right,rgba(248, 254, 171, 0.85),rgba(248, 254, 171, 0.97)),url("images/h2.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+
+ }
+ .showcase h1{
+font-family: 'Supermercado One', cursive;
+ 	font-size: 32px;
+ 	font-weight: 28px;
+
+
+ }
+ .top-box 
+ {
+ 	width: 350px;
+ 	height: 200px;
+ 	 border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 8px #888888;
+  margin-right: 10px;
+ 
+ }
+  .box{
+ 	width: 300px;
+ 	height: 385px;
+border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 8px #888888;
+
+ }
+ .box img{
+ 	width: 100%;
+ 	height: 40%;
+ }
+ .box h1{
+ 	font-family: 'Supermercado One', cursive;
+ 	font-size: 28px;
+ 	text-align: center;
+ }
+ .info{
+ 	height: 50vh;
+ 	width: 100%;
+ 	background: linear-gradient(to right, #1e5799 0%,#3ccdbb 0%, #16c9f6 100%);
+
+  clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%);
+
+ }
+ .hero-btn{
+	display: inline-block;
+	text-decoration: none;
+	font-family: 'Lato', sans-serif;
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 12px 34px;
+	font-size: 13px;
+	margin-top: 15px;
+
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+}
+.hero-btn:hover{
+	border: 1px solid #f44336;
+	background: blue;
+	transition: 1s;
+}
+.footer{
+	width: 100%;
+	height: 14vh;
+	
+	background-color: rgba(50, 40, 45, 0.82);
+}
+.footer h4{
+	padding-top: 8px;
+	text-align: center;
+	color: white;
+	font-family:'Lato', sans-serif;
+}
+.ficons {
+	display: flex;
+	color: whitesmoke;
+	justify-content: center;
+}
+.ficons .bi{
+	color: white;
+	font-size: 30px;
+	margin-left: 40px;
+	margin-top: 30px;
+	padding-top: 30px;
+}
+
+ @media(max-width: 700px){
+.cend h1{
+
+	font-size: 40px;
+	text-align: center;
+	text-shadow: 2px 2px blue;
+
+	
+}
+.cend p{
+
+	font-size: 25px;
+	text-align: center;
+	text-shadow: 1px 1px blue;
+
+	
+}
+
+
+ }
+/*
+ ------------------------Exercises-----------------------------------------------*/
+ *{
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+}
+	@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Lobster&family=Mochiy+Pop+P+One&family=Open+Sans:ital,wght@0,400;1,300&family=Roboto:ital,wght@1,100&family=Supermercado+One&display=swap');
+
+
+.header{
+			width: 100%;
+			height: 90vh;
+			background-image:linear-gradient(rgba(0,168,255,0.3), rgba(0,168,255,0.3)) ,url('images/e1.jpg');
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			clip-path: polygon(50% 0%, 100% 0, 100% 53%, 100% 91%, 46% 68%, 1% 82%, 0 0);
+			position: relative;
+		}
+		.header:before{
+			content: "";
+			position: absolute;
+			top: 0%;
+			bottom: 0%;
+			left: 0%;
+			right: 0%;
+			opacity: 0.4;
+			z-index: -1;
+			background: linear-gradient(to right, #af54a0 0%,#bf38a9 0%, #e218c0 100%);
+		}
+		.navbar:before{
+			content: "";
+			position: absolute;
+			top: 0%;
+			bottom: 0%;
+			left: 0%;
+			right: 0%;
+			opacity: 0.4;
+			z-index: -1;
+			background: linear-gradient(to right, #af54a0 0%,#bf38a9 0%, #e218c0 100%);
+		}
+		.nav-item  a{
+			text-decoration: none;
+			color: white;
+			font-weight: bold;
+		}
+		.cend h1{
+			color: white;
+			font-family: 'Supermercado One', cursive;
+			font-size: 60px;
+			text-shadow: 2px 2px whitesmoke;
+		}
+		.cend p{
+			color: white;
+			font-size: 35px;
+			font-family: 'Supermercado One', cursive;
+			text-shadow: 1px 1px whitesmoke;
+			text-align: center;
+		}
+		.header-section{
+			height: 50vh;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.pra{
+			height: 250px;
+			width: 300px;
+			  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
+  margin-left: 50%;
+  border-radius: 25%;
+		}
+		/*.exp{
+			height: 100vh;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+		}*/
+		.exp{
+			height: auto;
+			width: 100%;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+		}
+		.exp img{
+			height: 450px;
+			width: 500px;
+		}
+		.i2{
+			padding-top: 60px;
+			/*padding-left: 60px;*/
+		}
+		.i2{
+			font-family: 'Supermercado One', cursive;
+		}
+		.emc{
+			display: flex;
+			height: auto;
+			width: 100%;
+			
+
+		}
+		.item{
+			height: 250px;
+			width: 300px;
+				  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
+
+		}
+		.item img{
+			width: 100%;
+			height: 80%;
+		}
+		.item h3{
+			font-family: 'Supermercado One', cursive;
+			text-align: center;
+		}
+		.footer{
+	width: 100%;
+	height: 14vh;
+	
+	background-color: rgba(50, 40, 45, 0.82);
+}
+.footer h4{
+	padding-top: 8px;
+	text-align: center;
+	color: white;
+	font-family: 'Supermercado One', cursive;
+}
+.ficons {
+	display: flex;
+	color: whitesmoke;
+	justify-content: center;
+}
+.ficons .bi{
+	color: white;
+	font-size: 30px;
+	margin-left: 40px;
+	margin-top: 30px;
+	padding-top: 30px;
+}
+
+
+@media (max-width: 600px){
+
+	/*.exp{
+       
+       flex-direction: column; 
+
+	}*/
+	.exp{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.i2 h1{
+		text-align: center;
+	}
+	.cend h1{
+			color: white;
+			font-size: 45px;
+			text-shadow: 2px 2px orange;
+			text-align: center;
+		}
+		
+		.item{
+			margin-left: 90px;
+
+		}
+}
+
+
+/*
+-------------------------------------diet---------------------------------------*/
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+	@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Lobster&family=Mochiy+Pop+P+One&family=Open+Sans:ital,wght@0,400;1,300&family=Roboto:ital,wght@1,100&family=Supermercado+One&display=swap');
+		.header{
+			width: 100%;
+			height: 100vh;
+			background-image:linear-gradient(rgba(241, 146, 10, 0.79), rgba(255, 151, 0, 0.79)) ,url('https://cdn.dribbble.com/users/1022088/screenshots/5682793/illustration-8.png');
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+	/*		clip-path: polygon(0% 15%, 0 0, 15% 0%, 85% 0%, 100% 0, 100% 15%, 100% 70%, 100% 69%, 100% 69%, 62% 77%, 30% 84%, 0% 85%);*/
+			position: relative;
+		}
+/*		.header:before{
+			content: "";
+			position: absolute;
+			top: 0%;
+			bottom: 0%;
+			left: 0%;
+			right: 0%;
+			opacity: 0.4;
+			z-index: -1;
+			background: linear-gradient(to right, #f48717 0%,#f48717 0%, #ff8201 100%);
+		}*/
+		.header .waves{
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			left: 0;
+			z-index: 3;
+		}
+		.navbar:before{
+			content: "";
+			position: absolute;
+			top: 0%;
+			bottom: 0%;
+			left: 0%;
+			right: 0%;
+			opacity: 0.4;
+			z-index: -1;
+			background: linear-gradient(to right, #f48717 0%,#f48717 0%, #ff8201 100%);
+		}
+		.nav-item  a{
+			text-decoration: none;
+			color: white;
+			font-weight: bold;
+		}
+		.cend h1{
+			color: white;
+			font-family: 'Supermercado One', cursive;
+			font-size: 60px;
+			text-shadow: 2px 2px whitesmoke;
+		}
+		.cend p{
+			color: white;
+			font-family: 'Supermercado One', cursive;
+			font-size: 35px;
+			text-shadow: 1px 2px whitesmoke;
+			text-align: center;
+		}
+		.header-section{
+			height: 50vh;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.pra{
+			height: 250px;
+			width: 300px;
+			  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
+  margin-left: 50%;
+  border-radius: 25%;
+		}
+
+ .emc{
+			display: flex;
+			height: auto;
+			width: 100%;
+			
+
+		}
+		.item{
+			height: 250px;
+			width: 300px;
+				  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
+
+		}
+		.item img{
+			width: 100%;
+			height: 80%;
+		}
+		.item h3{
+			text-align: center;
+		}
+
+
+    .bf{
+    	display: flex;
+    	flex-direction: column;
+    	align-items: center;
+      margin-top: 20px;
+    	height: auto;
+    	width: 100%;
+    	padding-top: 45px;
+    	background-image: linear-gradient(to right, rgba(250, 148, 0, 1) , rgba(250, 148, 0, 1));
+   clip-path: polygon(28% 0, 100% 11%, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 0);
+   position: relative;
+
+    }
+    .bf:before{
+			content: "";
+			position: absolute;
+			top: 0%;
+			bottom: 0%;
+			left: 0%;
+			right: 0%;
+			opacity: 0.4;
+			z-index: -1;
+			background: linear-gradient( to right, #f48717 0%,#f48717 0%, #ff8201 100%);
+		}
+		.bf h3{
+			color: white;
+			font-size: 60px;
+			text-shadow: 3px 3px orange;
+
+		}
+		.bf p{
+			color: white;
+			
+			text-shadow: 1px 1px orange;
+		}
+		.footer{
+	width: 100%;
+	height: 14vh;
+	
+	background-color: rgba(50, 40, 45, 0.82);
+}
+.footer h4{
+	padding-top: 8px;
+	text-align: center;
+	color: white;
+	font-family:'Lato', sans-serif;
+}
+.ficons {
+	display: flex;
+	color: whitesmoke;
+	justify-content: center;
+}
+.ficons .bi{
+	color: white;
+	font-size: 30px;
+	margin-left: 40px;
+	margin-top: 30px;
+	padding-top: 30px;
+}
+
+		
+		@media(max-width: 600px){
+
+			.wag{
+				grid-template-columns: repeat(auto-fit, 400px);
+				/*grid-template-rows: repeat(auto-fit, auto-fill);*/
+			}
+     .cend h1{
+			color: white;
+			font-size: 35px;
+			text-shadow: 2px 2px blue;
+		}
+		.cend p{
+			color: white;
+			font-size: 20px;
+			text-shadow: 1px 1px blue;
+			text-align: center;
+		}
+		.item{
+			margin-left: 90px;
+
+		}
+		.bf h3{
+			padding-top: 40px;
+		}
+		.bf p{
+     
+     padding-top: 10px;
+		}
+
+		}

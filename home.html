@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<title>Healthyfy</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+	@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Lobster&family=Mochiy+Pop+P+One&family=Open+Sans:ital,wght@0,400;1,300&family=Roboto:ital,wght@1,100&family=Supermercado+One&display=swap');
+		.header{
+			width: 100%;
+			height: 100vh;
+			background-image:linear-gradient(rgba(0,168,255,0.3), rgba(0,168,255,0.3)) ,url('images/h1.jpg');
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			clip-path: polygon(100% 0%,100% 77%,50% 100%,0 75%,0 0);
+			position: relative;
+		}
+		.header:before{
+			content: "";
+			position: absolute;
+			top: 0%;
+			bottom: 0%;
+			left: 0%;
+			right: 0%;
+			opacity: 0.4;
+			z-index: -1;
+			background: linear-gradient(to right, #1e5799 0%,#3ccdbb 0%, #16c9f6 100%);
+		}
+	/*	.navbar:before{
+			content: "";
+			position: absolute;
+			top: 0%;
+			bottom: 0%;
+			left: 0%;
+			right: 0%;
+			opacity: 0.4;
+			z-index: -1;
+			background: linear-gradient(to right, #1e5799 0%,#3ccdbb 0%, #16c9f6 100%);
+		}*/
+		.nav-item  a{
+			text-decoration: none;
+			color: white;
+			font-weight: bold;
+			z-index: 1;
+		}
+
+		.cend{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.cend h1{
+			color: white;
+			font-size: 60px;
+			font-family: 'Supermercado One', cursive;
+			text-shadow: 2px 2px whitesmoke;
+		}
+		.cend p{
+			color: white;
+			font-size: 35px;
+			font-family: 'Supermercado One', cursive;
+			text-shadow: 1px 1px whitesmoke;
+			text-align: center;
+		}
+		.header-section{
+			height: 50vh;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.pra{
+			height: 250px;
+			width: 300px;
+			  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
+  margin-left: 50%;
+  border-radius: 25%;
+		}
+		.wrapper{
+			display: grid;
+			grid-gap: 20px;
+		}
+  
+  .top-container {
+  	display: grid;
+  	width: 100%;
+  	height: auto;
+  	grid-gap: 20px;
+  	grid-template-areas: 
+  	'showcase top-box top-box-a'
+  	'showcase top-box top-box-b'
+  }
+ 
+ 
+ 
+ .showcase{
+ 	width: 100%;
+ 	height: auto;
+ 	margin-left: 20px;
+ 	display: flex;
+ 	align-items: center;
+ 	flex-direction: column;
+ 	justify-content: start;
+ }
+
+ .boxes{
+ 	display: grid;
+ 	grid-template-columns: repeat(auto-fit, 20rem);
+ 	justify-content: center;
+ 	grid-gap: 20px;
+ }
+ .showcase{
+  
+  background-image: linear-gradient(to right,rgba(248, 254, 171, 0.85),rgba(248, 254, 171, 0.97)),url("images/h2.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+
+ }
+ .showcase h1{
+font-family: 'Supermercado One', cursive;
+ 	font-size: 32px;
+ 	font-weight: 28px;
+
+
+ }
+ .top-box 
+ {
+ 	width: 350px;
+ 	height: 200px;
+ 	 border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 8px #888888;
+  margin-right: 10px;
+ 
+ }
+  .box{
+ 	width: 300px;
+ 	height: 385px;
+border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 8px #888888;
+
+ }
+ .box img{
+ 	width: 100%;
+ 	height: 40%;
+ }
+ .box h1{
+ 	font-family: 'Supermercado One', cursive;
+ 	font-size: 28px;
+ 	text-align: center;
+ }
+ .info{
+ 	height: 50vh;
+ 	width: 100%;
+ 	background: linear-gradient(to right, #1e5799 0%,#3ccdbb 0%, #16c9f6 100%);
+
+  clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%);
+
+ }
+ .hero-btn{
+	display: inline-block;
+	text-decoration: none;
+	font-family: 'Lato', sans-serif;
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 12px 34px;
+	font-size: 13px;
+	margin-top: 15px;
+
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+}
+.hero-btn:hover{
+	border: 1px solid #f44336;
+	background: blue;
+	transition: 1s;
+}
+.footer{
+	width: 100%;
+	height: 14vh;
+	
+	background-color: rgba(50, 40, 45, 0.82);
+}
+.footer h4{
+	padding-top: 8px;
+	text-align: center;
+	color: white;
+	font-family:'Lato', sans-serif;
+}
+.ficons {
+	display: flex;
+	color: whitesmoke;
+	justify-content: center;
+}
+.ficons .bi{
+	color: white;
+	font-size: 30px;
+	margin-left: 40px;
+	margin-top: 30px;
+	padding-top: 30px;
+}
+
+ @media(max-width: 700px){
+.cend h1{
+
+	font-size: 40px;
+	text-align: center;
+	text-shadow: 2px 2px blue;
+
+	
+}
+.cend p{
+
+	font-size: 25px;
+	text-align: center;
+	text-shadow: 1px 1px blue;
+
+	
+}
+ .ficons .bi{
+	
+	font-size: 12px;
+	
+}
+.footer{
+	height: 20vh;
+}
+
+
+ }
+
+
+	</style>
+</head>
+<body>
+	
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="container" >
+
+  <a class="navbar-brand" href="#">Healthyfy</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto text-uppercase">
+      <li class="nav-item active">
+        <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="diet.html">Diet</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="exercise.html">Exercises</a>
+      </li>
+     
+    </ul>
+  </div>
+</div>
+</nav>
+
+     
+   
+ 
+<div class="header" id="topheader">
+<section class="header-section">
+	<div class="cend" data-aos="zoom-in">
+		<h1>Make Healthy Living Easier</h1>
+		<p>Welcome to healthyfy</p>
+		
+		
+	</div>
+	
+</section>
+
+</div>
+<hr>
+<div class="wrapper">
+<section class="top-container">
+	<header class="showcase" data-aos="fade-right">
+		<h1>Your health is your real wealth</h1>
+		<p>The statement is true as it is said if a person is healthy.A healthy lifestyle has many benefits not only for the body but for the mind too. Also, if you follow a healthy lifestyle then you can reduce the risk of having cancer, heart disease, diabetes, obesity, and osteoporosis.
+
+To sum it up, we can say that there are various benefits of living a healthy lifestyle. Also, a healthy lifestyle has many benefits to your social as well as personal life. Besides, it improves the relationships in the family. Most importantly, the person who lives a healthy lifestyle lives longer as compared to those who do not.
+For keeping your body and mind healthy you have to follow certain rules that will help you achieve your goal. Besides, there are certain measures that will help you to stay healthy.
+First of all, for being healthy you have to plan and follow a strict diet. This diet should contain all the essential minerals and vitamins required by the body. Also, eat only healthy food and avoid junk and heavily carbohydrate and fatty food.
+In addition, wake up early in the morning because first of all, it’s a healthy habit. Secondly, waking up early means you can get ready for your work early, spend some quality time with your family. Besides, this decides time for your sleep and sleep early because it de-stresses body.
+Avoid the mobile- the biggest drawback of this generation is that they are obsessed with their mobile phones. Moreover, these phones cause many physical and mental problem for them. So, to avoid the negative effects of mobile the usage volume of them should be reduced.
+
+Below are some points that helps you to maintain healthy lifestyle.
+
+		 </p>
+
+	</header>
+
+	
+		
+</section>
+<section class="boxes">
+	<div class="box" data-aos="flip-right">
+		<h1>Exercise Daily</h1>
+		<img src="images/h3.jpg">
+		<p>To keep yourself fit and Active and to keep yourself prepare for the day you must exercise daily</p>
+	</div>
+	<div class="box" data-aos="flip-left">
+		<h1>Keep Learning new things</h1>
+		<img src="images/h4.png">
+		<p>Continous Learning means continous growth-always keep yourself up-to-date about things in trend.</p>
+	</div>
+	<div class="box" data-aos="flip-right">
+		<h1>Eat Healthy</h1>
+		<img src="images/h5.jpg">
+		<p>Always keep a clean diet to keep yourself fit and active,person who eat healthy stays healthy</p>
+	</div>
+	<div class="box" data-aos="flip-left">
+		<h1>Drink sufficient water</h1>
+		<img src="images/h6.png">
+		<p>You must drink sufficent water in a day so your mind will remain active throughout the day</p>
+	</div>
+</section>
+<hr>
+
+
+</div>
+ <section class="footer">
+   	<h4>All copyright reserved@healthyfy</h4>
+   	<div class="ficons">
+   		<a href=""><i class="bi bi-linkedin"></i></a>
+   		<a href=""><i class="bi bi-instagram"></i></a>
+   		<a href=""><i class="bi bi-github"></i></a>
+   	</div>
+
+   	
+   </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/path/to/ztext.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+	</script>
+	  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+            
+            
+            duration:1000
+
+      });
+  </script>
+
+
+</body>
+</html>
